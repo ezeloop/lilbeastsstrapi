@@ -94,6 +94,7 @@ logs
 results
 node_modules
 .node_history
+/.history
 
 ############################
 # Tests
@@ -110,4 +111,5 @@ coverage
 license.txt
 exports
 *.cache
+build
 .strapi-updater.json
