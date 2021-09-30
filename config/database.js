@@ -10,7 +10,7 @@ module.exports = ({ env }) => ({
         database: env('DATABASE_NAME', 'lilbeasts'),
         username: env('DATABASE_USERNAME', 'postgres'),
         password: env('DATABASE_PASSWORD', 'admin'),
-        ssl: env.bool('DATABASE_SSL', false),
+        ssl: env.bool('DATABASE_SSL', true),
       },
       options: {}
     },
