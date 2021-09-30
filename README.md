@@ -3,7 +3,7 @@
 A quick description of my strapi application
 
 # First steps: 
-    To make it better the experience, i deployed the back 
+    To make it better the experience, i deployed the server 
     Back url: https://lilbeastscenter.herokuapp.com
 
 # Dashboard:
@@ -34,4 +34,6 @@ You can access to our dashboard https://lilbeastscenter.herokuapp.com/admin/ wit
     "sex": "2"
     },
 
+
+** After the review, this repo will be private for security
     
