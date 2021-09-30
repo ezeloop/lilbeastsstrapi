@@ -24,7 +24,7 @@ A quick description of your strapi application
     "text": "Precious",
     "animal_type": "1",
     "sex": "2"
-    }
+    },
 
 # Dashboard:
 You can access to our dashboard http://localhost:1337/admin/ with the super admin 
