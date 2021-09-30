@@ -1,22 +1,30 @@
 # Strapi application
 
-A quick description of your strapi application
+A quick description of my strapi application
 
-# Fist steps: 
-    * install all the dependencies
-    * required postgree db istalled
-    settings = {
-        username: postgres,
-        password: admin
-    }
-    
-    * Starting: npm start
-    and now, you can use the rest api http://localhost:1337/, you can get information as a no autenticaded user, from /pets, /animal-types, /sexes, /veterinaries to create data, you need to authorize (POST) at http://localhost:1337/auth/local with staff account with editor permission:
+# First steps: 
+    To make it better the experience, i deployed the back 
+    Back url: https://lilbeastscenter.herokuapp.com
+
+# Dashboard:
+You can access to our dashboard https://lilbeastscenter.herokuapp.com/admin/ with the super admin credentials={
+    mail: catsdeveloping@gmail.com
+    password: Lilbeasts123$_
+}
+
+# API REST
+    * https://lilbeastscenter.herokuapp.com/auth/local POST (to get auth token) staff account with editor permission:
     {
     "identifier": "admin@admin.com",
     "password": "112233"
     }
-    then with the jwt now, put a "bearer token" at the autorization, and now you can create and for example, you can http://localhost:1337/pets (POST):
+
+    * https://lilbeastscenter.herokuapp.com/pets GET
+    * https://lilbeastscenter.herokuapp.com/pets POST required authorization bearer token provided in /auth/local
+
+    same cases to get,post /animal-types, /sexes, /veterinaries..
+
+    example /pets POST with bearer token jwt: 
     {
     "name": "simon2",
     "age": "2",
@@ -26,10 +34,4 @@ A quick description of your strapi application
     "sex": "2"
     },
 
-# Dashboard:
-You can access to our dashboard http://localhost:1337/admin/ with the super admin 
-credentials={
-    mail: catsdeveloping@gmail.com
-    password: Lilbeasts123$_
-}
-
+    
